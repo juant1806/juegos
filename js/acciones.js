@@ -30,7 +30,7 @@ document.addEventListener("deviceready",function(){
 		$.ajax({
 			type:"POST",
 			 
-			url:"http://192.168.1.71/videojuegos/buscarGenero.php",
+			url:"http://192.168.1.68/videojuegos/buscarGenero.php",
 			data: "genero=" + $('#txtgenero').val(), 
 			error: function(){
 			 alert ('No se Puedo Conectar  a la Base de Datos');
@@ -56,7 +56,7 @@ document.addEventListener("deviceready",function(){
 		$("#btn_con").on("tap", function (){
 		$.ajax({
 			type:"POST", 
-			url:"http://192.168.1.68/videojuegos/buscarConsolas.php",
+			url:"http://192.168.1.68/videojuegos/buscarConsola.php",
 			data: "consola=" + $('#txtconsola').val(),
 			error: function(){
 			 alert ('No se Puedo Conectar  a la Base de Datos');
