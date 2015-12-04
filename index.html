@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PRIMERA APLICACION</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/mitema.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>VIDEOJUEGOS</h1>
+</div>
+
+<div>
+
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#" id="consulta1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CONSULTA1</h2>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#PaginaMII" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CONSULTA2</h2>
+</a>
+</li>
+
+</ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="a">
+<div>
+<h4>VIDEOJUEGOS</h4>
+</div>
+</div>
+</div>
+
+<!-- consulta1-->
+<div data-role="page" id="Pagina1"  data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>titulo1</h1>
+</div>
+<div data-role="main" class="ui-content">
+ <div id="todo">
+ </div>
+</div>
+<div data-role="footer" data-theme="a">
+<h4>Aplicacion Movil</h4>
+</div>
+</div>
+</div>
+<!-- fin consulta1-->
+
+<!-- consulta2-->
+<div data-role="page" id="PaginaMII" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>titulo2</h1>
+</div>
+<div data-role="main" class="ui-content">
+<a href="#genero" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Genero</a>
+<a href="#consola" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Consolas</a>
+</div>
+<div data-role="footer" data-theme="a">
+<h4>Aplicacion Movil</h4>
+</div>
+</div>
+</div>
+<!-- fin consultya2-->
+
+<!-- mostrar productos -->
+<div data-role="page" id="genero" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>titulo2</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div id="contenidogen">
+<input id="txtgenero" type="text" >
+<a href="#" id="btn_gen" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Buscar genero</a>
+ </div>
+</div>
+<div data-role="footer" data-theme="a">
+<h4>Aplicacion1</h4>
+</div>
+</div>
+</div>
+<!-- fin  mostrar productos-->
+
+<!-- mostrar marcas -->
+<div data-role="page" id="consola" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>titulo2</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div id="contenidocon">
+<input id="txtconsola" type="text">
+<a href="#" id="btn_con" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Buscar por Consolas</a>
+ </div>
+</div>
+<div data-role="footer" data-theme="a">
+<h4>Aplicacion1</h4>
+</div>
+</div>
+</div>
+<!-- fin  mostrar marcas-->
+
+</body>
+</html>
