@@ -42,7 +42,7 @@ document.addEventListener("deviceready",function(){
 		
 			for (var x= 0; x<datosgenero.genero.length; x++)
 			{
-				$('#contenidogen').append('<div><div><div style="display:inline-block"><img src="http://192.168.1.68/videojuegos/recursos/imagenes/fotos/'+datosgenero.genero[x].clave_videojuego+'.jpg" width="100"></div><div style="display:inline-block"><h1>'+ datosgenero.genero[x].nombre_videojuego +' </h1><h2> '+datosgenero.genero[x].genero_videojuego+' </h2></div></div><div><h2> '+datosgenero.genero[x].clasificacion_videojuego+' </h2><h2> '+datosgenero.genero[x].consola_videojuego+' </h2></div></div>');
+				$('#contenidogen').append('<table width="500" border="1" cellspacing="2" cellpadding="1"><tr><th scope="col" width="150">Imagen</th><th scope="col">Videojuego</th><th scope="col">Genero</th><th scope="col">Clasificacion</th><th scope="col">Consola</th></tr><tr align="center"><td><img src="http://192.168.1.68/videojuegos/recursos/imagenes/fotos/'+datosgenero.genero[x].clave_videojuego+'.jpg" width="100"></td><td>'+ datosgenero.genero[x].nombre_videojuego +'</td><td>'+datosgenero.genero[x].genero_videojuego+'</td><td>'+datosgenero.genero[x].clasificacion_videojuego+'</td><td>'+datosgenero.genero[x].consola_videojuego+'</td></tr></table>');
 			}
 				$(':mobile-pagecontainer').pagecontainer('change', '#genero',{
 				transition: 'pop'
@@ -68,7 +68,7 @@ document.addEventListener("deviceready",function(){
 		
 			for (var x= 0; x<datosconsola.consola.length; x++)
 			{
-				$('#contenidocon').append('<div><div><div style="display:inline-block"><img src="http://192.168.1.68/videojuegos/recursos/imagenes/fotos/'+datosconsola.consola[x].clave_videojuego+'.jpg" width="100"></div><div style="display:inline-block"><h1>'+ datosconsola.consola[x].nombre_videojuego +' </h1><h2> '+datosconsola.consola[x].genero_videojuego+' </h2></div></div><div><h2> '+datosconsola.consola[x].clasificacion_videojuego+' </h2><h2> '+datosconsola.consola[x].consola_videojuego+' </h2></div></div>');
+				$('#contenidocon').append('<table width="500" border="1" cellspacing="2" cellpadding="1"><tr><th scope="col" width="150">Imagen</th><th scope="col">Videojuego</th><th scope="col">consola</th><th scope="col">Clasificacion</th><th scope="col">Consola</th></tr><tr align="center"><td><img src="http://192.168.1.68/videojuegos/recursos/imagenes/fotos/'+datosconsola.consola[x].clave_videojuego+'.jpg" width="100"></td><td>'+ datosconsola.consola[x].nombre_videojuego +'</td><td>'+datosconsola.consola[x].consola_videojuego+'</td><td>'+datosconsola.consola[x].clasificacion_videojuego+'</td><td>'+datosconsola.consola[x].consola_videojuego+'</td></tr></table>');
 			}
 				$(':mobile-pagecontainer').pagecontainer('change', '#consola',{
 				transition: 'pop'
