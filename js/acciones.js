@@ -37,12 +37,12 @@ document.addEventListener("deviceready",function(){
 			}, 
 			success: function(respuestagen){
 				
-			var datosjuegos = JSON.parse(respuestagen);
+			var datosgenero = JSON.parse(respuestagen);
 			//alert(datosProducto.productos[0].nombreProducto);
 		
-			for (var x= 0; x<datosjuegos.genero.length; x++)
+			for (var x= 0; x<datosgenero.genero.length; x++)
 			{
-				$('#contenidogen').append('<div><div><div style="display:inline-block"><img src="http://192.168.1.68/videojuegos/recursos/imagenes/fotos/'+datosjuegos.genero[x].clave_videojuego+'.jpg" width="100"></div><div style="display:inline-block"><h1>'+ datosjuegos.genero[x].nombre_videojuego +' </h1><h2> '+datosjuegos.genero[x].genero_videojuego+' </h2></div></div><div><h2> '+datosjuegos.genero[x].clasificacion_videojuego+' </h2><h2> '+datosjuegos.genero[x].consola_videojuego+' </h2></div></div>');
+				$('#contenidogen').append('<div><div><div style="display:inline-block"><img src="http://192.168.1.68/videojuegos/recursos/imagenes/fotos/'+datosgenero.genero[x].clave_videojuego+'.jpg" width="100"></div><div style="display:inline-block"><h1>'+ datosgenero.genero[x].nombre_videojuego +' </h1><h2> '+datosgenero.genero[x].genero_videojuego+' </h2></div></div><div><h2> '+datosgenero.genero[x].clasificacion_videojuego+' </h2><h2> '+datosgenero.genero[x].consola_videojuego+' </h2></div></div>');
 			}
 				$(':mobile-pagecontainer').pagecontainer('change', '#genero',{
 				transition: 'pop'
@@ -61,7 +61,7 @@ document.addEventListener("deviceready",function(){
 			error: function(){
 			 alert ('No se Puedo Conectar  a la Base de Datos');
 			}, 
-			success: function(respuestamarca){
+			success: function(respuestaconsola){
 				
 			var datosconsola = JSON.parse(respuestaconsola);
 			//alert(datosProducto.productos[0].nombreProducto);
